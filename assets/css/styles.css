@@ -477,24 +477,12 @@ hr {
   top: 1.3rem;
 }
 
-/* .section-features {
-  height: 95vh;
-  padding: 20rem 15%;
-  background-color: #f7f7f7;
-  margin-top: -25vh;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(25, 136, 117, 0.75),
-      rgba(29, 205, 254, 0.75)
-    ),
-    url(../imgs/features.jpg);
-  background-size: cover;
-  clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
-} */
 /* Media Query */
 @media all and (max-width: 1028px) {
+  body {
+    padding: 0;
+  }
   .row-about,
-  .row-features,
   .row-projects {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
@@ -529,10 +517,81 @@ hr {
   .section-about {
     padding: 15rem 5% 5rem 5%;
   }
+  .for-new-feature {
+    display: none;
+  }
   .for-new-project {
     display: none;
   }
   .section-features {
-    padding: 10rem 5%;
+    padding: 15rem 5% 10rem 5%;
+    height: 100%;
+    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    margin-top: -20vh;
+  }
+  .section-projects {
+    padding: 15rem 5% 1rem 5%;
+  }
+  .row-features {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 0.8fr;
+    justify-content: center;
+    /* padding-top: 1.6rem; */
+  }
+  .row-projects {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 0.8fr;
+    justify-content: center;
+  }
+  .section-about .margin-bottom {
+    margin-bottom: 2.5rem;
+  }
+  .footer {
+    height: 33vh;
+    padding: 1rem 0;
+  }
+  .row1 {
+    padding-top: 0;
+    display: flex;
+    text-align: center;
+  }
+  .col1 {
+    font-size: 0.5rem;
+    line-height: 1.8rem;
+    padding-bottom: 1rem;
+    position: static;
+  }
+  .col2 {
+    position: static;
+  }
+  .col2 a span {
+    display: none;
+  }
+  .row2 {
+    display: block;
+    text-align: center;
+  }
+  .contact {
+    position: static;
+    line-height: 0.4rem;
+    font-size: 0.3rem;
+    margin-bottom: 0.5rem;
+  }
+  .social-media {
+    font-size: 1.2rem;
+    position: sticky;
+  }
+  .social-media ul {
+    display: inline-flex;
+    text-align: center;
+  }
+  .row3 {
+  }
+  .created-by {
+    position: sticky;
+    font-size: 0.9rem;
+    position: relative;
+    left: 15%;
+    top: 1.3rem;
   }
 }
